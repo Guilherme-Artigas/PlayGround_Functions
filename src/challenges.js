@@ -4,12 +4,12 @@ function compareTrue(arg1, arg2) {
     return true;
   } else {
     return false;
-  };
-};
+  }
+}
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, altura) {
+  return (base * altura) / 2;
 }
 
 // Desafio 3
