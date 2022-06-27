@@ -2,9 +2,8 @@
 function compareTrue(arg1, arg2) {
   if (arg1 === true && arg2 === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -13,8 +12,10 @@ function calcArea(base, altura) {
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(arg1) {
+  let newArray = []
+  newArray = arg1.split(' ')
+  return newArray
 }
 
 // Desafio 4
