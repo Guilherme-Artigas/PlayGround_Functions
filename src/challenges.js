@@ -21,13 +21,12 @@ function splitSentence(arg1) {
 // Desafio 4
 function concatName(arg1) {
   let ultimo = arg1.length - 1;
-  let frase = arg1[ultimo] + ', ' + arg1[0];
-  return frase;
+  return arg1[ultimo] + ', ' + arg1[0];
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return wins * 3 + ties;
 }
 
 // Desafio 6
