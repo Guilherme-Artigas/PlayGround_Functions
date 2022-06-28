@@ -65,7 +65,7 @@ function hydrate(arg1) {
     return soma + ' copos de água';
   };
 }
-console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'))
+
 module.exports = {
   generatePhoneNumber,
   hydrate,
