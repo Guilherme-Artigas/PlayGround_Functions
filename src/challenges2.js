@@ -48,10 +48,24 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(arg1) {
+  let soma = null;
+  let pegaNumeroString = null;
+  let numero = null;
+  for (let i of arg1) {
+    pegaNumeroString = i.replace(/[^0-9]/g,'');
+    numero = parseInt(pegaNumeroString);
+    if (isNaN(numero) !== true) {
+      soma += numero;
+    }
+  }
+  if (soma <= 1) {
+    return soma + ' copo de água';
+  } else {
+    return soma + ' copos de água';
+  };
 }
-
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'))
 module.exports = {
   generatePhoneNumber,
   hydrate,
